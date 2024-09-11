@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>remedyonlinegh.com</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
     <!-- Navbar -->
@@ -12,20 +13,20 @@
       <nav>
         <h1>Remedy Online</h1>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Courses</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="auth-buttons">
           <button class="btn1">Sign In</button>
-          <button class="btn2">Join For FREE</button>
+          <button class="btn2">Join For Free</button>
         </div>
       </nav>
     </header>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="#home">
       <div class="hero-content">
         <h2>Learn From Top Professionals</h2>
         <p>Start your learning journey today with our highly rated courses!</p>
@@ -91,7 +92,7 @@
       </div>
     </section>
     <!-- Subscription Section -->
-    <section class="subscription">
+    <section class="subscription" id="blog">
       <h2>Subscribe to Our Newsletter</h2>
       <p>Get updates on new courses and offers!</p>
       <input type="email" placeholder="Enter your email" />
@@ -99,7 +100,7 @@
     </section>
     <!-- Footer -->
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="contact">
         <p>&copy; 2024 EduCourses. All Rights Reserved.</p>
         <ul>
           <li><a href="#">Privacy Policy</a></li>
