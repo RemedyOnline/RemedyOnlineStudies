@@ -363,3 +363,22 @@ footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+.footer-sections {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  width: 25%;
+}
+
+.contact-details {
+  display: list-item;
+  text-align: left;
+}
+.copyRight-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
