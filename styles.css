@@ -7,27 +7,31 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-}
-
-/* header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-} */
-
-.theme-color {
-  color: #28a745;
+  /* background-image: url("./images/bg-image.jpg"); */
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   color: #fff;
   padding: 10px 20px;
   width: 100%;
   background-color: #333;
+}
+
+header {
+  background-image: url(./images/bg-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+
+.theme-color {
+  color: #28a745;
 }
 
 nav ul {
@@ -56,11 +60,11 @@ nav ul li a {
   } */
 
 nav ul li a:hover {
-    color: #28a745;
-    font-weight: bold;
-    position: relative;
-    text-decoration: underline;
-  }
+  color: #28a745;
+  font-weight: bold;
+  position: relative;
+  text-decoration: underline;
+}
 
 /*.auth-buttons .btn {
     background-color: #007BFF;
@@ -81,14 +85,14 @@ nav ul li a:hover {
   border-radius: 5px;
   margin-left: 10px;
   font-size: 16px;
-  border-style:solid;
+  border-style: solid;
   border-color: #28a745;
 }
 
 .auth-buttons .btn1:hover {
-    background-color: #1b682d;
-    text-decoration: underline;
-  }
+  background-color: #1b682d;
+  text-decoration: underline;
+}
 
 .auth-buttons .btn2 {
   background-color: #28a745;
@@ -102,30 +106,41 @@ nav ul li a:hover {
 }
 
 .auth-buttons .btn2:hover {
-    background-color: transparent;
-    text-decoration: underline;
-    color: white;
-    cursor: pointer;
-    border: 2px;
-    border-style:solid;
-    border-color: #28a745;
-  }
+  /* background-color: transparent; */
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  /* border: 2px; */
+  /* border-style:solid; */
+  /* border-color: #28a745; */
+}
 
 .main-hero {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .hero {
-  background: #f4f4f4;
+  /* background: #bfc216; */
+  /* background-image:url(./images/bg-image.jpg); */
   /* background-image:; */
+  margin-top: 50px;
   padding: 50px 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-content {
-    margin-top: 150px;
-    margin-bottom: 30px;
-    justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 2%;
+}
+
+.welcome-image {
+  width: 700px;
+  border-radius: 25px;
 }
 
 .hero h2 {
@@ -136,6 +151,7 @@ nav ul li a:hover {
 .hero p {
   font-size: 1.2rem;
   color: #666;
+  margin-top: 1%;
 }
 
 .cta-btn {
@@ -146,13 +162,14 @@ nav ul li a:hover {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1.1rem;
+  margin-top: 5%;
 }
 
 .cta-btn:hover {
-    background-color: #f4f4f4;
-    color: #28a745;
-    outline: auto;
-  }
+  background-color: transparent;
+  color: #28a745;
+  outline: auto;
+}
 
 .hero-cards {
   display: flex;
@@ -169,6 +186,20 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.qualities {
+  padding: 50px 20px;
+  background-image: url(./images/bg-image.jpg);
+  /* background-color: #bb0000; */
+}
+.section-head {
+  text-align: center;
+  font-size: 2rem;
+
+  color: #28a745;
+  padding: 2%;
+  text-decoration: overline underline;
+}
+
 .icon-size {
   width: 50px;
 }
@@ -180,8 +211,9 @@ nav ul li a:hover {
 
 .featured-courses {
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   text-align: center;
+  /* display: flex; */
 }
 
 .featured-courses h2 {
@@ -200,16 +232,16 @@ nav ul li a:hover {
 /* featured courses 1*/
 .course1 {
   background-color: white;
-  background-image: linear-gradient(rgb(79, 191, 64, 0.3), 10%, black),
+  background-image: linear-gradient(rgb(79, 191, 64, 0.1), 10%, black),
     url(images/graphic-design.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
-  width: 25%;
-  /* height: 10%; */
-  align-content: top;
+  width: 30%;
+  height: 300px;
+  align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -234,9 +266,9 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
-  width: 25%;
+  width: 30%;
   /* height: 400px; */
-  align-content: top;
+  align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -260,9 +292,9 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
-  width: 25%;
+  width: 30%;
   /* height: 10%; */
-  align-content: top;
+  align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -287,9 +319,9 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
-  width: 25%;
+  width: 30%;
   /* height: 10%; */
-  align-content: top    ;
+  align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -307,7 +339,7 @@ nav ul li a:hover {
 /* end of featured courses */
 
 .subscription {
-  padding: 50px 20px;
+  padding: 100px 20px;
   text-align: center;
   background-color: #28a745;
   color: white;
@@ -323,7 +355,8 @@ nav ul li a:hover {
   width: 300px;
   border-radius: 5px;
   border: none;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .subscription .btn {
@@ -336,12 +369,11 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 
-.subscription .btn:hover{
-    background-color: #28a745;
-    color: #fff;
-    outline: solid;
-  }
-
+.subscription .btn:hover {
+  background-color: #28a745;
+  color: #fff;
+  outline: solid;
+}
 
 footer {
   background-color: #333;
@@ -364,21 +396,105 @@ footer ul li a {
   text-decoration: none;
 }
 
+.links li {
+  display: block;
+  color: #28a745;
+  text-align: left;
+  padding: 3%;
+  margin-left: 25%;
+  text-decoration: underline;
+}
+
 .footer-sections {
   display: flex;
   justify-content: space-around;
 }
 
 .footer-section {
-  width: 25%;
+  width: 35%;
+  padding: 2%;
 }
 
 .contact-details {
   display: list-item;
   text-align: left;
+  /* padding: 20%; */
+}
+
+.footer-head {
+  color: #28a745;
+  padding: auto;
+  /* text-decoration:overline underline; */
+  padding: 5%;
+  /* line-height: 1px; */
+}
+
+.contact-details p {
+  padding: 2%;
 }
 .copyRight-social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
+
+/* a {color: whites;} */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* border-radius: 50%; */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+/* linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+#social-icons {
+  padding: 1px;
+}
+
+/* #location-icons {
+} */
