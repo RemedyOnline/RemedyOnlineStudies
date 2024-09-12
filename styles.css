@@ -32,6 +32,7 @@ header {
 
 .theme-color {
   color: #28a745;
+  text-decoration: overline;
 }
 
 nav ul {
@@ -123,7 +124,7 @@ nav ul li a:hover {
   /* background: #bfc216; */
   /* background-image:url(./images/bg-image.jpg); */
   /* background-image:; */
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 50px 20px;
   text-align: left;
 }
@@ -146,6 +147,12 @@ nav ul li a:hover {
 .hero h2 {
   font-size: 2.5rem;
   color: #333;
+}
+
+.heading-styling {
+  text-decoration: underline #28a745;
+  text-decoration-style:dashed;
+  /* color: #28a745; */
 }
 
 .hero p {
@@ -424,6 +431,7 @@ footer ul li a {
 .footer-head {
   color: #28a745;
   padding: auto;
+  font-size: 1;
   /* text-decoration:overline underline; */
   padding: 5%;
   /* line-height: 1px; */
