@@ -248,20 +248,20 @@ nav ul li a:hover {
 .courses {
   display: flex;
   gap: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 /* featured courses 1*/
 .course1 {
   background-color: white;
-  background-image: linear-gradient(rgb(79, 191, 64, 0.1), 10%, black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), 10%, black),
     url(images/graphic-design.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
   height: 300px;
@@ -277,13 +277,13 @@ nav ul li a:hover {
 
 .course1 p {
   color: #a5a5a5;
-  margin-bottom: 10px;
+  margin-bottom: 20%;
 }
 
 /* featured courses 2 */
 .course2 {
   background-color: white;
-  background-image: linear-gradient(rgb(79, 191, 64, 0.3), 10%, black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), 10%, black),
     url(images/dataScience.jpg);
   background-size: cover;
   background-position: center;
@@ -291,7 +291,7 @@ nav ul li a:hover {
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
-  /* height: 400px; */
+  height: 300px;
   align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -304,12 +304,12 @@ nav ul li a:hover {
 
 .course2 p {
   color: #a5a5a5;
-  margin-bottom: 10px;
+  margin-bottom: 20%;
 }
 /* featured courses 3 */
 .course3 {
   background-color: white;
-  background-image: linear-gradient(rgb(79, 191, 64, 0.3), 10%, black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), 10%, black),
     url(images/UiUx-image.jpg);
   background-size: cover;
   background-position: center;
@@ -317,7 +317,7 @@ nav ul li a:hover {
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
-  /* height: 10%; */
+  height: 300px;
   align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -330,13 +330,13 @@ nav ul li a:hover {
 
 .course3 p {
   color: #a5a5a5;
-  margin-bottom: 10px;
+  margin-bottom: 20%;
 }
 
 /* featured courses 4 */
 .course4 {
   background-color: white;
-  background-image: linear-gradient(rgb(79, 191, 64, 0.3), 10%, black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), 10%, black),
     url(images/html-image.jpg);
   background-size: cover;
   background-position: center;
@@ -344,7 +344,7 @@ nav ul li a:hover {
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
-  /* height: 10%; */
+  height: 300px;
   align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -357,7 +357,7 @@ nav ul li a:hover {
 
 .course4 p {
   color: #a5a5a5;
-  margin-bottom: 10px;
+  margin-bottom: 20%;
 }
 
 .view-course {
@@ -365,14 +365,14 @@ nav ul li a:hover {
   color: white;
   margin-top: 100px;
   padding: 10px;
-  background-color: #28a74681;
+  background-color: #28a74659;
   
 }
 
 .view-course:hover {
   text-decoration: underline #28a745;
-  font-weight: bold;
-  background-color: #28a745;
+  /* font-weight: bold; */
+  background-color: #28a746b0;
 }
 
 
@@ -391,6 +391,7 @@ nav ul li a:hover {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .testimonial {
@@ -579,7 +580,7 @@ input:nth-last-of-type(5):checked ~ main #carousel {
 }
 
 .subscription {
-  padding: 100px 20px;
+  padding: 70px 20px;
   text-align: center;
   background-color: #28a745;
   color: white;
@@ -595,7 +596,7 @@ input:nth-last-of-type(5):checked ~ main #carousel {
   width: 300px;
   border-radius: 5px;
   border: none;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-top: 20px;
 }
 
@@ -619,7 +620,7 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 footer ul {
@@ -640,8 +641,8 @@ footer ul li a {
   display: block;
   color: #28a745;
   text-align: left;
-  padding: 3%;
-  margin-left: 25%;
+  padding-bottom: 8%;
+  margin-left: 20%;
   text-decoration: none;
 }
 
@@ -651,11 +652,11 @@ footer ul li a {
 
 .footer-sections {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-section {
-  width: 35%;
+  width: 40%;
   padding: 2%;
 }
 
@@ -672,7 +673,10 @@ footer ul li a {
   /* text-decoration:overline underline; */
   padding: 5%;
   /* line-height: 1px; */
+  text-align: left;
 }
+
+
 
 .contact-details p {
   padding: 2%;
@@ -759,6 +763,6 @@ footer ul li a {
 /* #location-icons {
 } */
 
-.link-hover {
-  
+#quick-links {
+  margin-left: 70px;
 }
