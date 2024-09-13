@@ -151,7 +151,7 @@ nav ul li a:hover {
 
 .heading-styling {
   text-decoration: underline #28a745;
-  text-decoration-style:dashed;
+  text-decoration-style: dashed;
   /* color: #28a745; */
 }
 
@@ -444,23 +444,26 @@ footer ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 2%;
 }
 
-/* a {color: whites;} */
+.ruler {
+  width: 80%;
+}
 
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
+  width: 53px;
+  text-align: left;
   text-decoration: none;
   /* border-radius: 50%; */
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: 500ms;
 }
 
 /* Set a specific color for each brand */
@@ -469,6 +472,7 @@ footer ul li a {
 .fa-youtube {
   background: #bb0000;
   color: white;
+  size: 20rem;
 }
 
 /* Twitter */
@@ -502,6 +506,12 @@ footer ul li a {
 
 #social-icons {
   padding: 1px;
+}
+
+.privacyy {
+  text-align: left;
+  color: white;
+  text-decoration: underline #28a745;
 }
 
 /* #location-icons {
