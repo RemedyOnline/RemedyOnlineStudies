@@ -188,7 +188,7 @@ nav ul li a:hover {
   /* background-color: rgb(180, 49, 49); */
   padding: 20px;
   width: 300px;
-  height: 185px;
+  height: 100%;
   /* min-height: 210px; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -200,7 +200,7 @@ nav ul li a:hover {
 }
 
 .card img {
-  width: 30px;
+  width: 40px;
 }
 
 #card1 {
@@ -311,7 +311,6 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
   height: 300px;
@@ -337,7 +336,6 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
   height: 300px;
@@ -364,13 +362,20 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   padding: 20px;
   width: 30%;
   height: 300px;
   align-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course1:hover,
+.course2:hover,
+.course3:hover,
+.course4:hover {
+  /* background-size: auto; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .course4 h3 {
@@ -724,7 +729,7 @@ footer ul li a {
 
 .ruler {
   width: 80%;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 /* Add a hover effect if you want */
