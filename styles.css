@@ -107,13 +107,9 @@ nav ul li a:hover {
 }
 
 .auth-buttons .btn2:hover {
-  /* background-color: transparent; */
   text-decoration: underline;
   color: white;
   cursor: pointer;
-  /* border: 2px; */
-  /* border-style:solid; */
-  /* border-color: #28a745; */
 }
 
 .main-hero {
@@ -180,40 +176,67 @@ nav ul li a:hover {
 
 .hero-cards {
   display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  gap: 32px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+  gap: 28px;
 }
 
 .card {
   /* background-color: rgb(180, 49, 49); */
   padding: 20px;
   width: 300px;
-  height: 200px;
+  height: 185px;
+  /* min-height: 210px; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 40px;
+}
+
+.card p {
+  color: black;
+}
+
+.card img {
+  width: 30px;
 }
 
 #card1 {
-  background-color: #d8a817 ;
+  background-color: #f8d7da;
 }
+/* #d8a817 */
 
 #card2 {
-  background-color: #a72870;
+  background-color: #fff4e6;
 }
+
+/* #a72870 */
 
 #card3 {
-  background-color: rgb(41, 68, 139);
+  background-color: #f5f5d0;
 }
 
+#card4 {
+  background-color: #e6f7ff;
+}
 
+#card5 {
+  background-color: #f7f9f9;
+}
+
+#card6 {
+  background-color: #f8f5f2;
+}
+
+#card7 {
+  background-color: #f2e8ff;
+}
 
 .qualities {
   padding: 50px 20px;
-  background-image: url(./images/bg-image.jpg);
-  /* background-color: #bb0000; */
+  background-color: #f9f9f9;
 }
 .section-head {
   text-align: center;
@@ -366,7 +389,6 @@ nav ul li a:hover {
   margin-top: 100px;
   padding: 10px;
   background-color: #28a74659;
-  
 }
 
 .view-course:hover {
@@ -374,8 +396,6 @@ nav ul li a:hover {
   /* font-weight: bold; */
   background-color: #28a746b0;
 }
-
-
 
 /* end of featured courses */
 
@@ -400,34 +420,50 @@ nav ul li a:hover {
   /* border-radius: 10px; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 300px;
-  height: 450px;
+  height: 100%;
   text-align: center;
 }
 
 .testimonial img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   /* margin-bottom: 15px; */
 }
 
-.testimonial-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.rating-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2%;
+}
+
+.fa-star {
+  color: #999;
+}
+
+.checked,
+.fa-star-half-full {
+  color: orange;
+  font-size: 200px;
+}
+
+.rating-time {
+  font-size: 11px;
+  text-align: center;
+  align-content: center;
+  color: #999;
 }
 
 .testimonial .review {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 10px;
   font-style: italic;
 }
 
 .testimonial h4 {
   font-size: 1.1rem;
   color: #28a745;
-  margin-top: 5px;
 }
 
 .trusted-partners {
@@ -676,8 +712,6 @@ footer ul li a {
   text-align: left;
 }
 
-
-
 .contact-details p {
   padding: 2%;
 }
@@ -690,27 +724,24 @@ footer ul li a {
 
 .ruler {
   width: 80%;
-}
-
-.fa {
-  padding: 20px;
-  width: 53px;
-  text-align: left;
-  text-decoration: none;
-  /* border-radius: 50%; */
+  opacity: 0.3;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 50%;
-  transition: 500ms;
+  transition: 200ms;
 }
 
 /* Set a specific color for each brand */
 
 /* Youtube */
 .fa-youtube {
+  padding: 20px;
+  width: 53px;
+  text-align: center;
+  text-decoration: none;
   background: #bb0000;
   color: white;
   size: 20rem;
@@ -718,30 +749,47 @@ footer ul li a {
 
 /* Twitter */
 .fa-twitter {
+  padding: 20px;
+  width: 53px;
+  text-align: center;
+  text-decoration: none;
   background: #55acee;
   color: white;
 }
 
 /* Facebook */
 .fa-facebook {
+  padding: 20px;
+  width: 53px;
+  text-align: center;
+  text-decoration: none;
   background: #3b5998;
   color: white;
 }
 /* linkedin */
 .fa-linkedin {
+  padding: 20px;
+  width: 53px;
+  text-decoration: none;
+  text-align: center;
   background: #007bb5;
   color: white;
 }
 
 /* instagram */
 .fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55acee;
+  padding: 20px;
+  width: 53px;
+  text-decoration: none;
+  text-align: center;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   color: white;
 }
 
