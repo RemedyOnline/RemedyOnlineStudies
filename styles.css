@@ -147,7 +147,8 @@ nav ul li a:hover {
 
 .heading-styling {
   text-decoration: underline #28a745;
-  text-decoration-style: dashed;
+  text-decoration-style: wavy;
+  font-style: italic;
   /* color: #28a745; */
 }
 
@@ -375,7 +376,8 @@ nav ul li a:hover {
 .course3:hover,
 .course4:hover {
   /* background-size: auto; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+  transform: scale(1.01);
 }
 
 .course4 h3 {
