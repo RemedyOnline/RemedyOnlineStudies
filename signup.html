@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+   >
+   <title>Sign Up page - Remedy Online</title>
+   <link
+      rel="stylesheet"
+      href="styles.css"
+   />
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   />
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+   <div class="signup"></div>
+   <a href="/">Back to Home</a>
+   <form
+      action="results.html"
+      method="get"
+      enctype="multipart/form-data"
+   >
+      <div>
+         <label for="name">Name:</label>
+         <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+         >
+      </div>
+      <div>
+         <label for="email">Email:</label>
+         <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+         >
+      </div>
+      <div>
+         <label for="age">Age:</label>
+         <input
+            type="number"
+            name="age"
+            id="age"
+            min="6"
+            max="100"
+            step="2"
+         >
+      </div>
+      <div>
+         <label for="date">Date of Birth:</label>
+         <input
+            type="date"
+            name="date"
+            id="Date"
+            min="2016-10-25"
+         >
+      </div>
+      <div>
+         <h4>Favorite food...</h4>
+         <div>
+            <label for="rice">Rice</label>
+            <input
+               type="checkbox"
+               name="rice"
+               id="rice"
+            >
+         </div>
+         <div>
+            <label for="Banku">Banku</label>
+            <input
+               type="checkbox"
+               name="Banku"
+               id="Banku"
+            >
+         </div>
+         <div>
+            <label for="Indomie">Indomie</label>
+            <input
+               type="checkbox"
+               name="Indomie"
+               id="Indomie"
+            >
+         </div>
+      </div>
+      <div>
+         <h4>Gender</h4>
+         <label for="male">Male</label>
+         <input
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+         >
+      </div>
+      <div>
+         <label for="female">Female</label>
+         <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+         >
+      </div>
+      <div>
+         <label for="fav-color">Favorite Color:</label>
+         <select
+            name="fav-color"
+            id="fav-color"
+         >
+            <option value="Blue">Blue</option>
+            <option
+               label="Red"
+               value="Red"
+            ></option>
+            <option value="Orange">Orange</option>
+            <option
+               label="Green"
+               value="Green"
+            ></option>
+         </select>
+      </div>
+      <div>
+         <label for="bio">Bio</label>
+         <textarea
+            name="bio"
+            id="bio"
+            placeholder="Enter a summary about yourself"
+         ></textarea>
+      </div>
+      <input
+         type="hidden"
+         name="hidden"
+         value="Hi charleyy"
+      >
+      <div>
+         <label for="file">Submit CV</label>
+         <input
+            type="file"
+            name="file"
+            id="file"
+         >
+      </div>
+      <div>
+         <label for="phone">Phone</label>
+         <input
+            type="tel"
+            name="phone"
+            id="phone"
+         >
+      </div>
+      <div>
+         <label for="url">URL</label>
+         <input
+            type="url"
+            name="url"
+            id="url"
+         >
+      </div>
+      <div>
+         <label for="color">Color</label>
+         <input
+            type="color"
+            name="color"
+            id="color"
+         >
+      </div>
+      <div>
+         <label for="password">Password:</label>
+         <input
+            type="password"
+            name="Password"
+            id="password"
+            placeholder="Enter a valid password"
+            required
+         >
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+   </form>
+</body>
+
+</html>
