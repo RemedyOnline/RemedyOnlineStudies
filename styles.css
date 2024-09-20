@@ -484,6 +484,13 @@ nav ul li a:hover {
   color: #28a745;
 }
 
+/* main testimonial section */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
 /* carousel testimonial section */
 /* 
 .carousel-grid {
@@ -592,13 +599,6 @@ input:nth-of-type(5) {
 input:nth-last-of-type(5):checked ~ main #carousel {
   --position: 5;
 } */
-
-/* main testimonial section */
-.testimonials-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
 
 .partners-logos {
   display: flex;
