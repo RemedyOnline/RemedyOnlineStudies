@@ -196,6 +196,12 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.card:hover {
+  /* background-size: auto; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+  transform: scale(1.1);
+}
+
 .card p {
   color: black;
 }
@@ -477,6 +483,7 @@ nav ul li a:hover {
   padding: 60px 20px;
   background-color: white;
   text-align: center;
+  margin-bottom: -70px;
 }
 
 .quotes {
@@ -604,7 +611,7 @@ input:nth-last-of-type(5):checked ~ main #carousel {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -612,14 +619,40 @@ input:nth-last-of-type(5):checked ~ main #carousel {
   width: 120px;
   height: auto;
   transition: transform 0.3s ease-in-out;
+  opacity: 0.5;
 }
 
 .partners-logos img:hover {
   transform: scale(2);
+  opacity: 1;
 }
 
 .logo-prop {
   width: 150px;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .subscription {
@@ -745,8 +778,8 @@ footer ul li a {
 
 /* Youtube */
 .fa-youtube {
-  padding: 20px;
-  width: 53px;
+  padding: 10px;
+  width: fit-content;
   text-align: center;
   text-decoration: none;
   background: #bb0000;
@@ -756,8 +789,8 @@ footer ul li a {
 
 /* Twitter */
 .fa-twitter {
-  padding: 20px;
-  width: 53px;
+  padding: 10px;
+  width: fit-content;
   text-align: center;
   text-decoration: none;
   background: #55acee;
@@ -765,18 +798,18 @@ footer ul li a {
 }
 
 /* Facebook */
-.fa-facebook {
-  padding: 20px;
-  width: 53px;
+.fa-github {
+  padding: 10px;
+  width: fit-content;
   text-align: center;
   text-decoration: none;
-  background: #3b5998;
+  background: #555;
   color: white;
 }
 /* linkedin */
 .fa-linkedin {
-  padding: 20px;
-  width: 53px;
+  padding: 10px;
+  width: fit-content;
   text-decoration: none;
   text-align: center;
   background: #007bb5;
@@ -785,8 +818,8 @@ footer ul li a {
 
 /* instagram */
 .fa-instagram {
-  padding: 20px;
-  width: 53px;
+  padding: 10px;
+  width: fit-content;
   text-decoration: none;
   text-align: center;
   background: radial-gradient(
